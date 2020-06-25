@@ -1,5 +1,5 @@
 var student ={
-name: "",
+Fullname: "",
 type:"student"
 };
 document.addEventListener('DOMContentloaded', contentloaded);
@@ -11,10 +11,10 @@ function keyup(event) {
   calculateNumericOutput();
 }
 function   calculateNumericOutput() {
-  student.name = document.getElementById('Fullname').value;
+  student.Fullname = document.getElementById('Fullname').value;
   var totalNameValue = 0;
-  for (var i = 0; i < student.name.length; i++) {
-    totalNameValue += student.name.charcodeAt(i);
+  for (var i = 0; i < student.Fullname.length; i++) {
+    totalNameValue += student.Fullname.charcodeAt(i);
     }
     // Insert result into the page
     var output = "Total Numeric value of person's name is" +totalNameValue;
