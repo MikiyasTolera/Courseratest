@@ -4,14 +4,14 @@ type:"student"
 };
 document.addEventListener('DOMContentloaded', contentloaded);
 function contentloaded(event) {
-  document.getElementById('name').addEventListener("keyup",keyup)
+  document.getElementById('Fullname').addEventListener("keyup",keyup)
 
 }
 function keyup(event) {
   calculateNumericOutput();
 }
 function   calculateNumericOutput() {
-  student.name = document.getElementById('name').value;
+  student.name = document.getElementById('Fullname').value;
   var totalNameValue = 0;
   for (var i = 0; i < student.name.length; i++) {
     totalNameValue += student.name.charcodeAt(i);
